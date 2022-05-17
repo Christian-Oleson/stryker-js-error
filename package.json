@@ -1,0 +1,19 @@
+{
+  "name": "layout",
+  "private": true,
+  "scripts": {
+    "build": "lerna run --stream build",
+    "build-storybook": "lerna run --stream build-storybook",
+    "dev": "lerna run --stream dev",
+    "install-all": "lerna run --stream install",
+    "start": "lerna run --parallel --stream start",
+    "storybook": "lerna run --parallel --stream storybook",
+    "test": "lerna run --stream --no-bail test"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}
